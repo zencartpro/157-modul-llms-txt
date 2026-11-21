@@ -150,16 +150,18 @@ Wenn die Datei über die Shop-Oberfläche erstellt wird – wo jeder automatisch
 
 Es muss nichts hinzugefügt werden, und falls vorhanden, verweist `llms.txt` darauf. Wenn Ihre `robots.txt` für bestimmte Crawler den Zugriff auf `index.php` oder Query-Strings verbietet, dürfen diese möglicherweise die Live-Seite nicht abrufen; eine echte Datei im Stammverzeichnis ist von solchen Regeln nicht betroffen, was ein Grund dafür ist, dass **Datei** die Standardeinstellung ist.
 
-## Übersetzung
+## Übersetzung in andere Sprachen
 
-Die Wörter, die in der generierten Datei erscheinen (Abschnittsüberschriften, „Website“, „Preise in“, die Bezeichnungen für die integrierten Informationsseiten), stammen aus zwei Sprachdateien, eine pro Seite, da die Datei aus beiden erstellt werden kann:
+Die Wörter, die in der generierten Datei erscheinen (Abschnittsüberschriften, „Website“, „Preise in“, die Bezeichnungen für die integrierten Informationsseiten), stammen aus zwei Sprachdateien, eine pro Seite, da die Datei aus beiden erstellt werden kann.
+Mitgeliefert werden deutsch und englisch.
+Wenn Sie im Shop noch weitere Sprachen aktiv haben, dann kopieren Sie:
 
 ```
 catalog/includes/languages/german/extra_definitions/lang.llms_txt.php
 admin/includes/languages/german/extra_definitions/lang.llms_txt_names.php
 ```
 
-Kopieren Sie jede Datei in das entsprechende Verzeichnis für Ihre Sprache innerhalb dieses Plugins und übersetzen Sie die Werte. Die eigenen Strings der Admin-Seite befinden sich in `admin/includes/languages/english/lang.llms_txt.php`. Jede Datei verwendet das Array-Format, das seit Zen Cart v1.5.7k deutsch verstanden wird.
+in das entsprechende Verzeichnis für Ihre Sprache, z.B. french innerhalb dieses Plugins und übersetzen Sie die Werte. Die eigenen Strings der Admin-Seite befinden sich in `admin/includes/languages/german/lang.llms_txt.php`. Jede Datei verwendet das Array-Format, das seit Zen Cart v1.5.7k deutsch verstanden wird.
 
 ## Aktualisieren
 
