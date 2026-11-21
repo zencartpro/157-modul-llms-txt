@@ -1,5 +1,15 @@
 <?php
 /**
+ * Automatic LLMs.txt Generator for Zen Cart German 1.5.7k
+ * Zen Cart German Version - www.zen-cart-pro.at
+ * @requires    Zen Cart 1.5.7k German and PHP 8.4.x
+ * @author      dbltoe
+ * see https://github.com/dbltoe/Automatic_LLMs_Txt_Generator
+ * @copyright   2026
+ * @license     GNU General Public License (GPL) - https://www.gnu.org/licenses/gpl-3.0.html
+ * @version     1.0.4
+ * @updated     2026-11-21 - webchills for Zen Cart German 
+ *
  * Automatic LLMs.txt Generator -- admin page (Tools -> Automatic LLMs.txt Generator).
  *
  * Reached as admin/index.php?cmd=llms_txt, the routing Zen Cart has used for
@@ -9,10 +19,7 @@
  * Every state-changing operation is a POST carrying `action`, so Zen Cart's
  * global admin CSRF check in init_sessions.php applies; the token is checked
  * again here. Reads never change anything: the preview is built into memory
- * and thrown away.
- *
- * @package  LlmsTxt
- * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License v2.0
+ * and thrown away. 
  */
 
 require 'includes/application_top.php';

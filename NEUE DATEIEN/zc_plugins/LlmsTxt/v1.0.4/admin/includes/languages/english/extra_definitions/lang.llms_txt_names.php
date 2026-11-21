@@ -1,5 +1,15 @@
 <?php
 /**
+ * Automatic LLMs.txt Generator for Zen Cart German 1.5.7k
+ * Zen Cart German Version - www.zen-cart-pro.at
+ * @requires    Zen Cart 1.5.7k German and PHP 8.4.x
+ * @author      dbltoe
+ * see https://github.com/dbltoe/Automatic_LLMs_Txt_Generator
+ * @copyright   2026
+ * @license     GNU General Public License (GPL) - https://www.gnu.org/licenses/gpl-3.0.html
+ * @version     1.0.4
+ * @updated     2026-11-21 - webchills for Zen Cart German 
+ *
  * Automatic LLMs.txt Generator -- admin menu labels and generated-file wording (English).
  *
  * The BOX_* entries are the `language_key` values the installer writes into
@@ -10,10 +20,7 @@
  * in the generated file itself. They live in extra_definitions on BOTH sides
  * (this file, and the storefront's) because the file can be built from either.
  * The generator falls back to the same English if a key is missing, so a
- * translation may override any subset.
- *
- * @package  LlmsTxt
- * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License v2.0
+ * translation may override any subset. 
  */
 
 $define = [

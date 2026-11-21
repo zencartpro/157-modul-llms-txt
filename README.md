@@ -125,30 +125,7 @@ Zen Cart verfügt über keinen eigenen Scheduler, weshalb dies über den Shop-Be
 
 ## Einstellungen
 
-Alle Einstellungen befinden sich unter **Konfiguration → Automatischer LLMs.txt-Generator**.
-
-| Einstellung | Standard | Anmerkungen |
-| --- | --- | --- |
-| LLMs.txt aktivieren | true | Aus: Die Live-Seite gibt einen 404-Fehler zurück und es wird keine Datei geschrieben oder aktualisiert. Eine bereits im Stammverzeichnis vorhandene Datei bleibt unverändert. |
-| Veröffentlichen als | Datei | Siehe „Zwei Möglichkeiten zum Veröffentlichen“. |
-| Neu erstellen | Änderung | Siehe „Wann wird neu erstellt?“. |
-| Zusammenfassung speichern | leer | Das Zitat. Fügen Sie diesen Eintrag ein. Bleibt er leer, wird „*Shop-Name* ist ein Online-Shop.“ verwendet. |
-| Zusätzliche Hinweise | leer | Absätze nach der Zusammenfassung: Versandgebiete, Lieferzeiten, Mindestbestellwert. Markdown ist erlaubt und wird unverändert übernommen. |
-| Informationsseiten | shippinginfo, privacy, conditions, contact_us, site_map | Seitennamen, durch Kommas getrennt, in der angegebenen Reihenfolge. Integrierte Seiten erhalten automatisch eine Bezeichnung; geben Sie nach einem Doppelpunkt eine eigene an: `about_us:Über unser Unternehmen`. Wenn das Feld leer bleibt, wird der Abschnitt weggelassen. |
-| Kategorien auflisten | true | Jede Kategorie als „Übergeordnete > Untergeordnete“ mit ihrer Beschreibung. Deaktivierte Kategorien und alles darunter werden übersprungen. |
-| Kategorietiefe | 0 | 0 listet jede Ebene auf; 1 listet nur Kategorien der obersten Ebene auf; und so weiter. |
-| Kategorien ausschließen | leer | Kategorie-IDs, die zusammen mit ihren Unterkategorien und allen Produkten, deren Hauptkategorie eine davon ist, ausgelassen werden sollen. Praktisch für eine Kategorie für Geschenkgutscheine oder Ausverkaufsartikel. |
-| Produkte auflisten | true | Nur aktivierte Produkte, deren übergeordnete Kategorie erreichbar ist. |
-| Maximale Anzahl an Produkten | 200 | 0 bedeutet alle. Die Sortiereinstellung entscheidet, welche Produkte berücksichtigt werden. |
-| Produktreihenfolge | sort | sort (die Produktsortierreihenfolge, dann Name), neueste, Bestseller, Name, angesehen. |
-| Preise anzeigen | true | Der Grundpreis in der Standardwährung. Sonderangebote und Steuern werden nicht berücksichtigt. |
-| Länge der Beschreibung | 160 | Zeichen pro Zeile. Es wird die Meta-Tag-Beschreibung verwendet, sofern vorhanden; andernfalls der Anfang des Fließtextes ohne HTML-Code. |
-| Marken auflisten | true | Hersteller mit mindestens einem aktivierten Produkt, jeweils verlinkt auf ihre Produktliste mit einer Stückzahl. Eine Marke, deren Produkte sich alle in versteckten oder ausgeschlossenen Kategorien befinden, wird ausgelassen. |
-| EZ-Seiten auflisten | true | Veröffentlichte Seiten, die in der Kopfzeile, einer Seitenleiste, der Fußzeile oder im Inhaltsverzeichnis erscheinen. Seiten mit externen Links verweisen auf die jeweiligen Ziele. |
-| Sitemap-Adresse | leer | Wird leer gelassen, wird automatisch auf eine `sitemap.xml` im Stammverzeichnis verlinkt, sofern vorhanden. Eine `robots.txt` im Stammverzeichnis wird auf dieselbe Weise verlinkt; hierfür gibt es keine eigene Einstellung. |
-| Sprache | leer | Zweibuchstiger Code. Wenn das Feld leer ist, wird die Shop-Standardeinstellung verwendet. |
-| Auch „llms-full.txt“ veröffentlichen | false | Eine zweite, längere Datei mit vollständigen Beschreibungen und Modellnummern, die von „llms.txt“ aus verlinkt wird. |
-| Länge der vollständigen Beschreibung | 1200 | Zeichen pro Eintrag in „llms-full.txt“. |
+Alle Einstellungen befinden sich unter **Konfiguration → Automatischer LLMs.txt-Generator** und sind dort erklärt
 
 ## Die Seite „Tools“
 
@@ -212,5 +189,5 @@ Er ist deaktiviert, seine Hauptkategorie oder eine der übergeordneten Kategorie
 
 ### Die Links sind „index.php“-Adressen, obwohl der Shop SEO-URLs verwendet
 
-Der letzte Build wurde über den Admin-Bereich ausgeführt. Siehe SEO-URL-Plugins; der nächste Neuaufbau des Shops behebt das Problem, oder Sie unternehmen gar nichts und warten auf einen solchen.
+Der letzte Build wurde über den Admin-Bereich ausgeführt. Siehe SEO-URL-Plugins; der nächste Neuaufbau des Shop Frontends behebt das Problem, oder Sie unternehmen gar nichts und warten auf einen solchen.
 

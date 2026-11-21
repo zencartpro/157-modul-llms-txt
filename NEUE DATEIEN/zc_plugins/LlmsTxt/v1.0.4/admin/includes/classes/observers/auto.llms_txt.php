@@ -1,5 +1,15 @@
 <?php
 /**
+ * Automatic LLMs.txt Generator for Zen Cart German 1.5.7k
+ * Zen Cart German Version - www.zen-cart-pro.at
+ * @requires    Zen Cart 1.5.7k German and PHP 8.4.x
+ * @author      dbltoe
+ * see https://github.com/dbltoe/Automatic_LLMs_Txt_Generator
+ * @copyright   2026
+ * @license     GNU General Public License (GPL) - https://www.gnu.org/licenses/gpl-3.0.html
+ * @version     1.0.4
+ * @updated     2026-11-21 - webchills for Zen Cart German 
+ *
  * Automatic LLMs.txt Generator -- admin observer that flags catalog changes.
  *
  * Auto-loaded by includes/init_includes/init_observers.php, which every
@@ -11,13 +21,10 @@
  * plugin's state file, and the storefront's next check (or the next dynamic
  * request) does the build. That keeps every admin save as fast as it was.
  *
- * Every notifier here is present from v1.5.8 through v3.0.0-dev, checked
+ * Every notifier here is present in 1.5.7k German, checked
  * against the source of each release rather than the documentation. The
  * fingerprint comparison covers whatever an observer misses (a delete, a
- * status flip from the listing), so this is the fast path, not the only one.
- *
- * @package  LlmsTxt
- * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License v2.0
+ * status flip from the listing), so this is the fast path, not the only one. 
  */
 
 if (!defined('IS_ADMIN_FLAG')) {
