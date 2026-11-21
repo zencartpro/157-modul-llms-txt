@@ -1419,7 +1419,7 @@ function llmstxt_publish($db, $reason = 'manual', $takeover = false)
             [$full, $content] = $t;
             $path = llmstxt_file_path($full);
             if (!$takeover && !$state['takeover'] && !llmstxt_file_is_ours($path, $state, $full)) {
-                $result['skipped'][] = basename($path) . ' was not written by this plugin and has been left alone';
+                $result['skipped'][] = basename($path) . ' wurde von diesem Modul nicht geschrieben und wurde daher nicht verändert';
                 continue;
             }
             if (llmstxt_write_file($path, $content)) {
