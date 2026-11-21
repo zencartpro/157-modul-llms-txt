@@ -163,7 +163,7 @@ admin/includes/languages/german/extra_definitions/lang.llms_txt_names.php
 
 in das entsprechende Verzeichnis für Ihre Sprache, z.B. french innerhalb dieses Plugins und übersetzen Sie die Werte. Die eigenen Strings der Admin-Seite befinden sich in `admin/includes/languages/german/lang.llms_txt.php`. Jede Datei verwendet das Array-Format, das seit Zen Cart v1.5.7k deutsch verstanden wird.
 
-## Aktualisieren
+## Modul aktualisieren
 
 Laden Sie das Verzeichnis der neuen Version neben das alte hoch und klicken Sie im Plugin-Manager auf **Aktualisieren**. Von Ihnen geänderte Einstellungen bleiben erhalten; nur Bezeichnungen, Hilfetexte und Standardwerte für neue Einstellungen werden aktualisiert. Entfernen Sie anschließend das Verzeichnis der alten Version.
 
