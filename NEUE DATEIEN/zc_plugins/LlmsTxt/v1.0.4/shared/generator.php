@@ -8,7 +8,7 @@
  * @copyright   2026
  * @license     GNU General Public License (GPL) - https://www.gnu.org/licenses/gpl-3.0.html
  * @version     1.0.4
- * @updated     2026-11-21 - webchills for Zen Cart German 
+ * @updated     2026-11-24 - webchills for Zen Cart German 
  *
  * Automatic LLMs.txt Generator -- the generator, shared by the storefront and the admin.
  *
@@ -440,7 +440,7 @@ function llmstxt_format_price($price, $currency)
 
 /**
  * The language the file is written in: the configured code, else the store
- * default, else languages_id 1.
+ * default, else languages_id 43.
  *
  * @param object $db
  * @param array  $settings
@@ -452,7 +452,7 @@ function llmstxt_language_id($db, array $settings)
     if ($settings['language'] !== '') {
         $codes[] = $settings['language'];
     }
-    $default = strtolower((string)llmstxt_cfg('DEFAULT_LANGUAGE', 'en'));
+    $default = strtolower((string)llmstxt_cfg('DEFAULT_LANGUAGE', 'de'));
     if ($default !== '' && !in_array($default, $codes, true)) {
         $codes[] = $default;
     }
@@ -467,7 +467,7 @@ function llmstxt_language_id($db, array $settings)
             return (int)$r->fields['languages_id'];
         }
     }
-    return 1;
+    return 43;
 }
 
 /**
